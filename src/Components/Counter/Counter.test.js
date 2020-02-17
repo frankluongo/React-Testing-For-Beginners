@@ -6,7 +6,7 @@ import Counter from "./Counter";
 afterEach(cleanup);
 
 test("<Counter />", () => {
-  const { debug, getByTestId } = render(<Counter />);
+  const { getByTestId } = render(<Counter />);
   const counterButton = getByTestId("counter-button");
   // debug();
   // Asserts that counter is a button and starts at 0
